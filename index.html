@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Course Organizer - a clean and responsive student course management website.">
+  <title>CourseFlow | Personal Course Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="CourseFlow home">
+        <span class="brand-mark">CF</span>
+        <span>CourseFlow</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="my_courses.html">My Courses</a>
+        <a href="add_course.html">Add Course</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">PERSONAL COURSE ORGANIZER</span>
+          <h1>Keep your learning <span>organized.</span></h1>
+          <p class="hero-text">
+            A simple student-focused dashboard for keeping courses, instructors,
+            credit hours, and notes in one clear place.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="my_courses.html">View My Courses</a>
+            <a class="btn btn-secondary" href="add_course.html">Add a Course</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Course overview">
+          <div class="mini-card-top">
+            <span class="status-dot"></span>
+            <span>Current semester</span>
+          </div>
+          <div class="overview-number">5</div>
+          <p>Courses organized</p>
+          <div class="progress">
+            <span></span>
+          </div>
+          <div class="overview-meta">
+            <span>18 Credit Hours</span>
+            <span>On track</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <span class="section-label">ABOUT THE PROJECT</span>
+        <h2>Built to make student life a little simpler.</h2>
+        <p class="section-text">
+          CourseFlow helps students manage academic information without unnecessary
+          complexity. Add courses, review important details, and keep notes available
+          whenever you need them.
+        </p>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">FEATURES</span>
+            <h2>Everything in one place.</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Course Management</h3>
+            <p>Keep course names, instructors, credit hours, and notes organized.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Quick Overview</h3>
+            <p>Review your current courses through a clean card-based layout.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Responsive Design</h3>
+            <p>Use the organizer comfortably across desktop, tablet, and mobile screens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">CF</span>
+          <span>CourseFlow</span>
+        </a>
+        <p>A student-friendly personal course organizer.</p>
+      </div>
+      <p>© <span id="year"></span> CourseFlow. Built as a frontend practice project.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

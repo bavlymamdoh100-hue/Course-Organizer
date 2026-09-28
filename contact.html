@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact CourseFlow.">
+  <title>Contact | CourseFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="my_courses.html">My Courses</a>
+        <a href="add_course.html">Add Course</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">GET IN TOUCH</span>
+        <h1>Contact</h1>
+        <p>Have a question or suggestion? Send a message through the form.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <span class="section-label">LET'S CONNECT</span>
+          <h2>We'd love to hear from you.</h2>
+          <p>
+            This contact page is part of the CourseFlow frontend practice project.
+            The form demonstrates client-side interaction and validation.
+          </p>
+          <div class="contact-item">
+            <span>Email</span>
+            <strong>personal_course_organizer@gmail.com</strong>
+          </div>
+          <div class="contact-item">
+            <span>Social</span>
+            <strong>@bavly.mamdoh.9</strong>
+          </div>
+        </div>
+
+        <form id="contact-form" class="professional-form">
+          <label for="name">Your name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="6" placeholder="Write your message..." required></textarea>
+
+          <button class="btn btn-primary form-button" type="submit">Send Message</button>
+          <p id="contact-message" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+        <p>A student-friendly personal course organizer.</p>
+      </div>
+      <p>© <span id="year"></span> CourseFlow. Built as a frontend practice project.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

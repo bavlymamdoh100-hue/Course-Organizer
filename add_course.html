@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Add a course to CourseFlow.">
+  <title>Add Course | CourseFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="my_courses.html">My Courses</a>
+        <a class="active" href="add_course.html">Add Course</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">COURSE MANAGEMENT</span>
+        <h1>Add a Course</h1>
+        <p>Create a new course entry and keep your semester details organized.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <span class="section-label">NEW COURSE</span>
+          <h2>Build your course list.</h2>
+          <p>
+            Enter the main information about your course. The form uses browser
+            validation and saves the course locally for this demo.
+          </p>
+        </div>
+
+        <form id="course-form" class="professional-form">
+          <label for="courseName">Course name</label>
+          <input id="courseName" name="courseName" type="text" placeholder="e.g. Web Development" required>
+
+          <label for="instructor">Instructor</label>
+          <input id="instructor" name="instructor" type="text" placeholder="e.g. Ahmed Ali" required>
+
+          <label for="credits">Credit hours</label>
+          <input id="credits" name="credits" type="number" min="1" max="12" placeholder="e.g. 3" required>
+
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="5" placeholder="Add topics, reminders, or useful notes..."></textarea>
+
+          <button class="btn btn-primary form-button" type="submit">Add Course</button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+        <p>A student-friendly personal course organizer.</p>
+      </div>
+      <p>© <span id="year"></span> CourseFlow. Built as a frontend practice project.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

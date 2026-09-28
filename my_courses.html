@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View organized courses in CourseFlow.">
+  <title>My Courses | CourseFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="my_courses.html">My Courses</a>
+        <a href="add_course.html">Add Course</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">YOUR ACADEMIC SPACE</span>
+        <h1>My Courses</h1>
+        <p>Review the courses you are currently organizing.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="courses-toolbar">
+          <div>
+            <h2>Current semester</h2>
+            <p id="course-count">5 courses</p>
+          </div>
+          <a class="btn btn-primary" href="add_course.html">+ Add Course</a>
+        </div>
+
+        <div class="course-grid" id="course-list">
+          <article class="course-card">
+            <div class="course-top"><span class="course-tag">FRONTEND</span><span>6 CH</span></div>
+            <h3>Front End Development</h3>
+            <p class="instructor">Ahmed</p>
+            <p>HTML, CSS, JavaScript fundamentals and responsive web design.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-tag">AI</span><span>6 CH</span></div>
+            <h3>AI Fundamentals</h3>
+            <p class="instructor">Alaa</p>
+            <p>Machine learning basics and introductory artificial intelligence concepts.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-tag">DATABASE</span><span>3 CH</span></div>
+            <h3>Database Systems</h3>
+            <p class="instructor">Sally</p>
+            <p>SQL, relational databases, normalization, and core database concepts.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-tag">PROGRAMMING</span><span>6 CH</span></div>
+            <h3>C++</h3>
+            <p class="instructor">Amr</p>
+            <p>Programming fundamentals and the basics of C++ development.</p>
+          </article>
+          <article class="course-card">
+            <div class="course-top"><span class="course-tag">PROGRAMMING</span><span>3 CH</span></div>
+            <h3>Python</h3>
+            <p class="instructor">Mohamed</p>
+            <p>Python fundamentals, syntax, and basic programming concepts.</p>
+          </article>
+        </div>
+
+        <div id="empty-state" class="empty-state hidden">
+          <h3>No courses yet</h3>
+          <p>Add your first course to start organizing your semester.</p>
+          <a class="btn btn-primary" href="add_course.html">Add Course</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">CF</span><span>CourseFlow</span></a>
+        <p>A student-friendly personal course organizer.</p>
+      </div>
+      <p>© <span id="year"></span> CourseFlow. Built as a frontend practice project.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
